@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11131b">
+  <meta name="description" content="Discover inspiring events, meet your community, and book your next unforgettable experience with Evently.">
+  <title>Evently — Discover. Connect. Experience.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%239c83ff'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='middle' text-anchor='middle' fill='%2311131b' font-family='sans-serif' font-size='29' font-weight='700'%3Ee%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Evently home"><span class="brand-mark">e</span>evently<span class="brand-period">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="primary-nav">
+        <a href="#home">Home</a><a href="#explore">Explore Events</a><a href="#categories">Categories</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle color theme"><span aria-hidden="true">☼</span></button>
+        <a class="button button-small button-primary nav-cta" href="#register">Get started <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-dark" id="home">
+      <div class="hero-image" role="img" aria-label="Crowd enjoying a live music event"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> FIND YOUR PEOPLE, FIND YOUR MOMENT</p>
+        <h1>Discover experiences<br>that <span>stay with you.</span></h1>
+        <p class="hero-copy">From inspiring conferences to unforgettable music festivals, discover experiences that bring people together.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#explore">Explore events <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#register">Host an event <span aria-hidden="true">＋</span></a></div>
+        <div class="hero-search" aria-label="Find your next event">
+          <label class="search-field"><span aria-hidden="true">⌕</span><span class="sr-only">Event name or keyword</span><input id="hero-query" type="search" placeholder="What are you looking for?"></label>
+          <label class="search-field"><span aria-hidden="true">✳</span><span class="sr-only">Event category</span><select id="hero-category"><option value="">All interests</option></select></label>
+          <label class="search-field"><span aria-hidden="true">⌖</span><span class="sr-only">Location</span><select id="hero-location"><option value="">Anywhere</option></select></label>
+          <button class="button button-primary search-submit" id="hero-search" type="button">Find events <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="hero-social-proof"><div class="avatar-stack" aria-hidden="true"><span>J</span><span>A</span><span>M</span><span>S</span></div><p><strong>12k+</strong> people found their next thing</p></div>
+      </div>
+      <div class="hero-note"><span class="pulse-dot"></span> GOOD THINGS HAPPEN WHEN WE GET TOGETHER</div>
+    </section>
+
+    <section class="ticker" aria-label="Evently tagline"><div class="ticker-track"><span>MAKE ROOM FOR THE UNEXPECTED</span><b>✳</b><span>YOUR CITY IS YOURS TO EXPLORE</span><b>✳</b><span>MAKE ROOM FOR THE UNEXPECTED</span><b>✳</b><span>YOUR CITY IS YOURS TO EXPLORE</span></div></section>
+
+    <section class="section container section-pad" id="featured">
+      <div class="section-heading"><div><p class="eyebrow eyebrow-dark">THE GOOD STUFF</p><h2>Worth making<br><span class="text-accent">plans for.</span></h2></div><a class="text-link" href="#explore">See all events <span aria-hidden="true">↗</span></a></div>
+      <div class="featured-grid" id="featured-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="countdown-band">
+      <div class="countdown-photo" role="img" aria-label="People gathered at an outdoor event"></div>
+      <div class="countdown-content container">
+        <div><p class="eyebrow">UP NEXT ON YOUR CALENDAR</p><h2 id="countdown-title">A little something to look forward to.</h2><p id="countdown-location">Find your next unforgettable moment.</p></div>
+        <div class="countdown-clock" aria-label="Countdown to the next event"><div><strong id="days">00</strong><span>days</span></div><i>:</i><div><strong id="hours">00</strong><span>hours</span></div><i>:</i><div><strong id="minutes">00</strong><span>minutes</span></div><i>:</i><div><strong id="seconds">00</strong><span>seconds</span></div></div>
+        <button class="button button-light" id="countdown-action" type="button">Get the details <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section container section-pad categories-section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow eyebrow-dark">FOLLOW YOUR CURIOSITY</p><h2>Pick a <span class="text-accent">feeling.</span></h2></div><p class="section-intro">Big energy or a little inspiration. There's a space for you here.</p></div>
+      <div class="category-grid">
+        <button class="category-card category-violet" data-category="Technology"><span class="category-icon">⌘</span><span class="category-name">Technology</span><span class="category-arrow">↗</span></button>
+        <button class="category-card category-coral" data-category="Music"><span class="category-icon">♫</span><span class="category-name">Music &amp; festivals</span><span class="category-arrow">↗</span></button>
+        <button class="category-card category-blue" data-category="Business"><span class="category-icon">↗</span><span class="category-name">Business &amp; networking</span><span class="category-arrow">↗</span></button>
+        <button class="category-card category-lime" data-category="Sports"><span class="category-icon">◉</span><span class="category-name">Sports</span><span class="category-arrow">↗</span></button>
+        <button class="category-card category-yellow" data-category="Education"><span class="category-icon">✳</span><span class="category-name">Education &amp; workshops</span><span class="category-arrow">↗</span></button>
+        <button class="category-card category-pink" data-category="Entertainment"><span class="category-icon">✦</span><span class="category-name">Arts &amp; entertainment</span><span class="category-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="explore-section section-pad" id="explore">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow eyebrow-dark">THE LINEUP</p><h2>Make your <span class="text-accent">own plans.</span></h2></div><p class="section-intro">Your next great story is somewhere in here.</p></div>
+        <form class="filter-bar" id="filter-form">
+          <label class="filter-control"><span>Search</span><input id="filter-query" type="search" placeholder="Event or keyword"></label>
+          <label class="filter-control"><span>Category</span><select id="filter-category"><option value="">All categories</option></select></label>
+          <label class="filter-control"><span>Location</span><select id="filter-location"><option value="">All locations</option></select></label>
+          <label class="filter-control"><span>Sort by</span><select id="filter-sort"><option value="date">Soonest date</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></label>
+          <button class="button button-dark filter-reset" id="filter-reset" type="reset">Clear</button>
+        </form>
+        <div class="results-line"><p id="results-count" aria-live="polite"></p><button class="text-link show-all" id="show-all" type="button">Show all events <span aria-hidden="true">↗</span></button></div>
+        <div class="event-grid" id="event-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>No plans found (yet).</h3><p>Try another search or clear a filter to see what's happening.</p><button class="button button-dark" id="empty-reset" type="button">Clear filters</button></div>
+      </div>
+    </section>
+
+    <section class="about-section section-pad" id="about">
+      <div class="container about-grid">
+        <div class="about-visual"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Friends connecting at a lively community event" loading="lazy" onerror="fallbackImage(this)"><div class="about-stamp"><span>GO OUT.<br>FEEL MORE.</span><b>✳</b></div><div class="about-caption"><strong>12,000+</strong><span>moments made together</span></div></div>
+        <div class="about-copy"><p class="eyebrow eyebrow-dark">A LITTLE ABOUT US</p><h2>Life happens<br><span class="text-accent">out there.</span></h2><p class="about-lead">Evently helps people discover meaningful experiences, connect with communities, and participate in events that inspire them.</p><p>We think the best moments aren't always planned—but finding them should be easy. So we bring the people, places, and ideas worth showing up for, all into one place.</p><div class="about-stats"><div><strong>250+</strong><span>local experiences</span></div><div><strong>18</strong><span>cities and counting</span></div><div><strong>4.9<span>★</span></strong><span>community rating</span></div></div><a class="button button-dark" href="#categories">Find your people <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="register-section section-pad" id="register">
+      <div class="container register-grid">
+        <div class="register-intro"><p class="eyebrow">YOUR NEXT YES STARTS HERE</p><h2>Save your<br>spot.</h2><p>Found something that feels like you? A few details and it’s yours.</p><div class="register-note"><span>✳</span><p><strong>Good plans, made simple.</strong><br>Pick an event, bring your people, and we'll save you a place.</p></div></div>
+        <form class="registration-form" id="registration-form" novalidate>
+          <div class="form-heading"><h3>Get your ticket</h3><p>Fields marked <span>*</span> are required.</p></div>
+          <div class="form-row"><label class="form-field">Full name <span>*</span><input id="full-name" name="name" autocomplete="name" placeholder="e.g. Aanya Sharma" required><small class="field-error" id="name-error"></small></label><label class="form-field">Email address <span>*</span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><small class="field-error" id="email-error"></small></label></div>
+          <div class="form-row"><label class="form-field">Mobile number <span>*</span><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit Indian number" required><small class="field-error" id="phone-error"></small></label><label class="form-field">Choose your event <span>*</span><select id="registration-event" name="event" required><option value="">Select an event</option></select><small class="field-error" id="event-error"></small></label></div>
+          <label class="form-field ticket-field">Number of tickets <span>*</span><input id="ticket-quantity" name="quantity" type="number" min="1" max="10" value="1" required><small class="field-error" id="quantity-error"></small></label>
+          <label class="form-field">Anything we should know? <span class="optional">(optional)</span><textarea id="message" name="message" rows="3" placeholder="Accessibility needs, a note for the organizer..."></textarea></label>
+          <button class="button button-primary form-submit" type="submit">Reserve my spot <span aria-hidden="true">↗</span></button><p class="form-privacy">Your details stay on this device. <a href="#contact">Learn more</a></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="newsletter-section section-pad">
+      <div class="container newsletter-inner"><div><p class="eyebrow eyebrow-dark">GOOD THINGS IN YOUR INBOX</p><h2>A little inspiration,<br><span class="text-accent">now and then.</span></h2><p>Fresh finds, local favorites, and plans worth leaving home for.</p></div><form class="newsletter-form" id="newsletter-form" novalidate><label class="sr-only" for="newsletter-email">Your email address</label><div class="newsletter-input"><input id="newsletter-email" type="email" placeholder="Your email address" required><button class="button button-dark" type="submit">Count me in <span aria-hidden="true">↗</span></button></div><small id="newsletter-feedback" aria-live="polite"></small><p>No spam, ever. Just the good stuff.</p></form></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">e</span>evently<span class="brand-period">.</span></a><p>Discover. Connect. Experience.<br>Make a little more room for life.</p><div class="social-links"><a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer">ig</a><a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noreferrer">in</a><a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noreferrer">yt</a></div></div><div class="footer-column"><h3>Explore</h3><a href="#explore">All events</a><a href="#categories">Categories</a><a href="#featured">Featured picks</a></div><div class="footer-column"><h3>Evently</h3><a href="#about">Our story</a><a href="#register">Host an event</a><a href="#contact">Get in touch</a></div><div class="footer-column"><h3>Say hello</h3><a href="mailto:hello@evently.example">hello@evently.example</a><span>New Delhi, India</span><span>Mon–Fri, 9am–6pm IST</span></div></div><div class="container footer-bottom"><span>© <span id="copyright-year"></span> Evently. Made for moments that matter.</span><span>Built with curiosity &amp; good company.</span></div></footer>
+
+  <dialog class="event-dialog" id="event-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close event details">×</button><div id="dialog-content"></div></dialog>
+  <dialog class="success-dialog" id="success-dialog" aria-labelledby="success-title"><button class="dialog-close" type="button" aria-label="Close confirmation">×</button><div class="success-icon">✓</div><p class="eyebrow eyebrow-dark">IT'S A PLAN</p><h2 id="success-title">You're on the list.</h2><p id="success-message"></p><div class="reference-box"><span>YOUR REFERENCE</span><strong id="reference-id"></strong></div><button class="button button-dark success-close" type="button">Lovely, thanks <span aria-hidden="true">↗</span></button></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
